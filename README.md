@@ -53,27 +53,3 @@ python -m src.md_converter.main input.md --css styles.css -o output.html
 *Italic text*
 ***Bold and italic text***
 ```
-
-### Lists
-```markdown
-- Item 1
-- Item 2
-  - Nested item
-  - Another nested item
-- Item 3
-```
-
-### Links
-```markdown
-[Link text](https://example.com)
-```
-
-## Architecture
-
-The converter is built with modularity in mind:
-
-- `MarkdownParser`: Handles the parsing logic for different markdown elements
-- `convert_md_to_html`: Wraps the parsed content in a complete HTML document
-- `main`: Entry point with command-line argument parsing
-
-All parsing is done using regular expressions and string manipulation, without relying on external markdown libraries.
